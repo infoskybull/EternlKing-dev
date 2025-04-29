@@ -51,12 +51,12 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/288ef896960faf31db7ecee84e584b22.loader.js";
+      var loaderUrl = buildUrl + "/91860b54cbb5c6be491def615fe40ff1.loader.js";
       var config = {
         arguments: [],
-        dataUrl: buildUrl + "/c83667d77dcf91359295b808fa64a0b2.data.unityweb",
+        dataUrl: buildUrl + "/e4abede91b1cddcdfc87b593f90f6783.data.unityweb",
         frameworkUrl: buildUrl + "/a69df164ad87daa518ac6091d30caeb3.framework.js.unityweb",
-        codeUrl: buildUrl + "/d20d87cc4c673cb3c64fa1f4f3dfc2f3.wasm.unityweb",
+        codeUrl: buildUrl + "/3d4d37ca5f31d22712d89525dc09fde8.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "Skybull",
         productName: "Eternal Kings",
@@ -110,6 +110,7 @@
           document.querySelector("#unity-progress-bar-full").style.width = 100 * progress + "%";
               }).then((unityInstance) => {
                 document.querySelector("#unity-loading-bar").style.display = "none";
+
               }).catch((message) => {
                 alert(message);
               });
@@ -120,7 +121,7 @@
     </script>
     <script>
       window.tonConnect = new TON_CONNECT_UI.TonConnectUI({
-        manifestUrl: "https://seahorse-magnetic-officially.ngrok.app/api/ftp/File/get-file/eternal_king_mainnet.json",
+        manifestUrl: "https://seahorse-magnetic-officially.ngrok.app/api/ftp/File/get-file/eternal_king_testnet.json",
         testnet: true
       });
 
