@@ -20,7 +20,7 @@
       </div>
       <div id="unity-warning"> </div>
       <div id="unity-footer">
-       
+        
       </div>
     </div>
     <script>
@@ -52,12 +52,12 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/ad0a5506012b2a427a2e113f678b1ffe.loader.js";
+      var loaderUrl = buildUrl + "/1fd14177edc2e08739651d7100262ca9.loader.js";
       var config = {
         arguments: [],
-        dataUrl: buildUrl + "/ded2725335d9b0906c28abcf2e1429f9.data.unityweb",
+        dataUrl: buildUrl + "/3e39c229e530a233e12b623659205c4a.data.unityweb",
         frameworkUrl: buildUrl + "/3491a3321ec24b8c17994600c2c09e0d.framework.js.unityweb",
-        codeUrl: buildUrl + "/2bd01c164d2911814b8ba0e4577483ff.wasm.unityweb",
+        codeUrl: buildUrl + "/6f3673bc396dd695fb57e2fca67e7d30.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "Skybull",
         productName: "Eternal Kings",
@@ -111,8 +111,6 @@
           document.querySelector("#unity-progress-bar-full").style.width = 100 * progress + "%";
               }).then((unityInstance) => {
                 document.querySelector("#unity-loading-bar").style.display = "none";
-          
-
               }).catch((message) => {
                 alert(message);
               });
@@ -123,7 +121,7 @@
     </script>
     <script>
       window.tonConnect = new TON_CONNECT_UI.TonConnectUI({
-        manifestUrl: "https://seahorse-magnetic-officially.ngrok.app/api/ftp/File/get-file/eternal_king_mainnet.json",
+        manifestUrl: "https://seahorse-magnetic-officially.ngrok.app/api/ftp/File/get-file/eternal_king_testnet.json",
         testnet: true
       });
 
