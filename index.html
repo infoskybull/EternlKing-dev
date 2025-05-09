@@ -42,6 +42,7 @@
       </div>
       <div id="unity-warning"> </div>
       <div id="unity-footer">
+        
       </div>
     </div>
     <script>
@@ -73,12 +74,12 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/05d14ec7370993041db3e71389ec95d3.loader.js";
+      var loaderUrl = buildUrl + "/2c4b48f19845f4d5c088eaa1013324f4.loader.js";
       var config = {
         arguments: [],
-        dataUrl: buildUrl + "/d3898ee2d0b21752b6222c14a161614c.data.unityweb",
-        frameworkUrl: buildUrl + "/e5c318006e3ba2d53f770b5ad98b3ec1.framework.js.unityweb",
-        codeUrl: buildUrl + "/341158892c17382016fe947fc9079209.wasm.unityweb",
+        dataUrl: buildUrl + "/35ba9b388f23e693848e15c523d2c811.data.unityweb",
+        frameworkUrl: buildUrl + "/a550abc870ae4556c87264da9b573814.framework.js.unityweb",
+        codeUrl: buildUrl + "/aa6a8c11a93f5545aa7cb327e1f1a124.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "Skybull",
         productName: "Eternal Kings",
@@ -132,6 +133,10 @@
           document.querySelector("#unity-progress-bar-full").style.width = 100 * progress + "%";
               }).then((unityInstance) => {
                 document.querySelector("#unity-loading-bar").style.display = "none";
+                document.querySelector("#unity-fullscreen-button").onclick = () => {
+                  unityInstance.SetFullscreen(1);
+                };
+
               }).catch((message) => {
                 alert(message);
               });
@@ -171,7 +176,6 @@
         }
       }
     </script>
-    <!-- <script> src="https://sad.adsgram.ai/js/sad.min.js"</script> -->
   
   </body>
 </html>
